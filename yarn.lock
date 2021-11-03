@@ -1275,6 +1275,14 @@
   dependencies:
     "@chakra-ui/utils" "1.8.3"
 
+"@chakra-ui/icons@^1.0.16":
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/icons/-/icons-1.0.16.tgz#b8bb0f258c6b883cb050bd840fffc08834db932a"
+  integrity sha512-coxrM4ZYl103p4Y1cXQlDc2cvqRBbNmvccbwUBcB5lod2HKoaZIBhEbxoue5DbrRnNoWIOENnHFxe/ANffu6bw==
+  dependencies:
+    "@chakra-ui/icon" "1.1.12"
+    "@types/react" "^17.0.0"
+
 "@chakra-ui/image@1.0.21":
   version "1.0.21"
   resolved "https://registry.yarnpkg.com/@chakra-ui/image/-/image-1.0.21.tgz#ebd57a1198ec3ae6e0cb995db056d3d85269a4ec"
@@ -1883,6 +1891,22 @@
     js-yaml "^3.13.1"
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
+
+"@figspec/components@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@figspec/components/-/components-1.0.0.tgz#b1ddf0593173157cb5e79e50073ca1491bb7c6dc"
+  integrity sha512-a8sgP0YLJ3H0g0pdZPYecxfp9JNVQUTaaU3xcSci8duHXTGkJ7X8QPPCBbyhB+MoxMxnsAh8GjkfZHEr9oIoPQ==
+  dependencies:
+    copy-to-clipboard "^3.0.0"
+    lit-element "^2.4.0"
+    lit-html "^1.1.1"
+
+"@figspec/react@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@figspec/react/-/react-1.0.0.tgz#226ff85e146038b284ddf1ddbc086d2d14fe370a"
+  integrity sha512-BkOu3RsKF5vCtPoqsc6Oeyxw4wr9GesFrB9/wDHFqgjzhWsw8erFxCsPxsjdlJD8d8OWVHoM6SWxAaGe/pLdxg==
+  dependencies:
+    "@figspec/components" "^1.0.0"
 
 "@gar/promisify@^1.0.1":
   version "1.1.2"
@@ -3131,6 +3155,15 @@
   version "17.0.31"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.31.tgz#fe05ebf91ff3ae35bb6b13f6c1b461db8089dff8"
   integrity sha512-MQSR5EL4JZtdWRvqDgz9kXhSDDoy2zMTYyg7UhP+FZ5ttUOocWyxiqFJiI57sUG0BtaEX7WDXYQlkCYkb3X9vQ==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@^17.0.0":
+  version "17.0.33"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.33.tgz#e01ae3de7613dac1094569880bb3792732203ad5"
+  integrity sha512-pLWntxXpDPaU+RTAuSGWGSEL2FRTNyRQOjSWDke/rxRg14ncsZvx8AKWMWZqvc1UOaJIAoObdZhAWvRaHFi5rw==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -4754,7 +4787,7 @@ copy-descriptor@^0.1.0:
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
 
-copy-to-clipboard@3.3.1, copy-to-clipboard@^3.3.1:
+copy-to-clipboard@3.3.1, copy-to-clipboard@^3.0.0, copy-to-clipboard@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/copy-to-clipboard/-/copy-to-clipboard-3.3.1.tgz#115aa1a9998ffab6196f93076ad6da3b913662ae"
   integrity sha512-i13qo6kIHTTpCm8/Wup+0b1mVWETvu2kIMzKoK8FpkLkFxlt0znUAHcMzox+T8sPlqtZXq3CulEjQHsYiGFJUw==
@@ -7684,6 +7717,18 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
+lit-element@^2.4.0:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-2.5.1.tgz#3fa74b121a6cd22902409ae3859b7847d01aa6b6"
+  integrity sha512-ogu7PiJTA33bEK0xGu1dmaX5vhcRjBXCFexPja0e7P7jqLhTpNKYRPmE+GmiCaRVAbiQKGkUgkh/i6+bh++dPQ==
+  dependencies:
+    lit-html "^1.1.1"
+
+lit-html@^1.1.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-1.4.1.tgz#0c6f3ee4ad4eb610a49831787f0478ad8e9ae5e0"
+  integrity sha512-B9btcSgPYb1q4oSOb/PrOT6Z/H+r6xuNzfH4lFli/AWhYwdtrgQkQWBbIc6mdnf6E2IL3gDXdkkqNktpU0OZQA==
+
 loader-runner@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/loader-runner/-/loader-runner-2.4.0.tgz#ed47066bfe534d7e84c4c7b9998c2a75607d9357"
@@ -10334,6 +10379,13 @@ store2@^2.12.0:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.12.0.tgz#e1f1b7e1a59b6083b2596a8d067f6ee88fd4d3cf"
   integrity sha512-7t+/wpKLanLzSnQPX8WAcuLCCeuSHoWdQuh9SB3xD0kNOM38DNf+0Oa+wmvxmYueRzkmh6IcdKFtvTa+ecgPDw==
 
+storybook-addon-designs@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/storybook-addon-designs/-/storybook-addon-designs-6.2.0.tgz#d297d3aa053b99c4d3591310e6f2a041bf6aa46a"
+  integrity sha512-cZbfhbLPnEquTF7MU+NXRdKdxjisKseQiSvfGFizXBJtc2kBHGgg8tUHjLVq75uaaP1p/iNPb4SPDow3pM4bfQ==
+  dependencies:
+    "@figspec/react" "^1.0.0"
+
 storybook-addon-outline@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/storybook-addon-outline/-/storybook-addon-outline-1.4.1.tgz#0a1b262b9c65df43fc63308a1fdbd4283c3d9458"
@@ -10344,6 +10396,11 @@ storybook-addon-outline@^1.4.1:
     "@storybook/components" "^6.3.0"
     "@storybook/core-events" "^6.3.0"
     ts-dedent "^2.1.1"
+
+storybook-addon-pseudo-states@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/storybook-addon-pseudo-states/-/storybook-addon-pseudo-states-1.0.0.tgz#21f4f954d734e531812e04207f9ac431b2c6bbc7"
+  integrity sha512-pRbPB/L2IB5jFX2snE3qS+/Fhsb9vej/s30opUgD+vrUTShvatUHJpajI5cDOxT6Gape6YWKg06/L75OW2vu/g==
 
 stream-browserify@3.0.0:
   version "3.0.0"
