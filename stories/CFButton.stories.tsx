@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { withDesign } from "storybook-addon-designs";
 
-import CFButton from "./CFButton";
+import CFButton from "../src/components/CFButton";
 import { Heading, Select, Text, VStack } from "@chakra-ui/react";
 import { CheckCircleIcon, ChevronDownIcon } from "@chakra-ui/icons";
 

@@ -1,6 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import React from 'react';
-import { theme } from '../styles/chakraTheme/base'
+import { theme } from '../src/chakraTheme/theme'
 
 
 export const parameters = {

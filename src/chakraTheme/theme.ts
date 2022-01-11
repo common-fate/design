@@ -5,6 +5,7 @@ import {
   ThemeOverride,
   withDefaultProps,
 } from "@chakra-ui/react";
+import { colors } from "./colors";
 
 // Global style overrides
 // import styles from './styles';
@@ -22,47 +23,7 @@ const one: ThemeOverride = {
   fonts: {
     body: "Rubik",
   },
-  colors: {
-    brandBlue: {
-      300: "#2E7FFF",
-    },
-    blue: {
-      50: "#def0ff",
-      100: "#afd0ff",
-      200: "#7db1ff",
-      300: "#4b92ff",
-      400: "#1a72ff",
-      500: "#0059e6",
-      600: "#0045b4",
-      700: "#003182",
-      800: "#001e51",
-      900: "#000a21",
-    },
-    gray: {
-      50: "#f2f2f3",
-      100: "#d9d9d9",
-      200: "#bfbfbf",
-      300: "#a5a5a5",
-      400: "#8b8b8b",
-      500: "#727272",
-      600: "#585858",
-      700: "#404040",
-      800: "#262626",
-      900: "#0c0d0d",
-    },
-    purple: {
-      50: "#f2effb",
-      100: "#d5d2e1",
-      200: "#b9b5ca",
-      300: "#9c97b3",
-      400: "#80799d",
-      500: "#676084",
-      600: "#504b67",
-      700: "#39354a",
-      800: "#22202f",
-      900: "#0a0a16",
-    },
-  },
+  colors: colors,
 };
 
 const two: ThemeOverride = {
@@ -74,20 +35,20 @@ const two: ThemeOverride = {
           py: props.size == "sm" ? "10px" : "13px",
           color: "white",
           rounded: "full",
-          bg: "blue.300",
+          bg: "brandBlue.300",
           _hover: {
-            bg: "blue.400",
+            bg: "brandBlue.400",
             // nested _disabled is needed here to override style
             _disabled: {
-              bg: "blue.300",
+              bg: "brandBlue.300",
             },
           },
           _active: {
-            bg: "blue.400",
+            bg: "brandBlue.400",
           },
           _disabled: {
             opacity: 0.2,
-            bg: "blue.300",
+            bg: "brandBlue.300",
           },
           variant: "solid",
         }),
@@ -134,8 +95,8 @@ const two: ThemeOverride = {
         rounded: "md",
         px: "8px",
         py: "4px",
-        bg: "purple.700",
-        "--popper-arrow-bg": "colors.purple.700",
+        bg: "brandPurple.300",
+        "--popper-arrow-bg": "colors.brandPurple.300",
       },
     },
     // Other components go here

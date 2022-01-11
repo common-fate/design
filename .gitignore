@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# auto-generated directories
+dist

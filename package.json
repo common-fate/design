@@ -1,27 +1,30 @@
 {
-  "name": "design",
   "version": "0.1.0",
-  "private": true,
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/types/index.d.ts",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
+    "build": "tsc  --outDir dist --rootDir src --declarationDir dist --declaration true && rollup -c",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "dependencies": {
+  "name": "@common-fate/design",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/common-fate"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
     "@chakra-ui/icons": "^1.0.16",
     "@chakra-ui/react": "^1.6.10",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
-    "framer-motion": "^4",
-    "next": "11.1.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.15.8",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-typescript": "^8.3.0",
     "@storybook/addon-actions": "^6.3.12",
     "@storybook/addon-essentials": "^6.3.12",
     "@storybook/addon-links": "^6.3.12",
@@ -30,8 +33,26 @@
     "babel-loader": "^8.2.3",
     "eslint": "8.0.1",
     "eslint-config-next": "11.1.2",
+    "framer-motion": "^4",
+    "next": "11.1.2",
+    "postcss": "^8.4.5",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "rollup": "^2.63.0",
+    "rollup-plugin-dts": "^4.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
     "storybook-addon-designs": "^6.2.0",
     "storybook-addon-pseudo-states": "^1.0.0",
     "typescript": "4.4.4"
+  },
+  "peerDependencies": {
+    "@chakra-ui/icons": "^1.0.16",
+    "@chakra-ui/react": "^1.6.10",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "framer-motion": "^4",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   }
 }
