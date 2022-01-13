@@ -1,20 +1,20 @@
 {
-  "version": "0.1.0",
+  "version": "0.0.2",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
-  "types": "dist/types/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc  --outDir dist --rootDir src --declarationDir dist --declaration true && rollup -c",
+    "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "name": "@common-fate/design",
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npmjs.org/common-fate"
+    "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
