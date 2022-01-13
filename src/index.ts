@@ -1,2 +1,1 @@
-// This is the main output used from
-export * from "./components";
+export * from "./components/CFButton";
