@@ -3,8 +3,6 @@ import React from "react";
 
 interface Props {}
 
-const CFButton = (props: ButtonProps) => {
+export const CFButton = (props: ButtonProps) => {
   return <Button {...props} />;
 };
-
-export default CFButton;
