@@ -10,36 +10,18 @@ const extensions = [".js", ".ts", ".jsx", ".tsx"];
 
 export default [
   {
-    input: [
-      // 'src/components/CFButton.tsx'
-      ...getFiles("./src/components", extensions),
-      // ...getFiles('./src/chakraTheme', extensions)
-    ],
-    // input: ["src/**/*.ts", "src/**/*.tsx"],
+    input: "src/index.ts",
     // inlineDynamicImports: true,
     output: [
       {
         file: packageJson.main,
         format: "cjs",
         sourcemap: true,
-        // inlineDynamicImports: true,
-        // preserveModules: true,
-        // preserveModulesRoot: 'src',
-
-
-        // exports: ''
-        // exports: 'named'
       },
       {
         file: packageJson.module,
         format: "esm",
         sourcemap: true,
-        // inlineDynamicImports: true,
-        // preserveModules: true,
-        // preserveModulesRoot: 'src',
-
-
-        // exports: 'named'
       },
     ],
     // resolve: {
