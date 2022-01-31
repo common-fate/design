@@ -12,10 +12,9 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "name": "@common-fate/design",
+  "name": "@commonfate/design",
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com/"
+    "access": "public"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
