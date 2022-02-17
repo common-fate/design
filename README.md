@@ -20,7 +20,7 @@ If you want to use the react component library on your own project run the follo
 
 1. Download the package from github
     ```
-    yarn add @common-fate/design
+    yarn add @commonfate/design
     ```
     To fetch a specific release you can append an ampersand followed by the verision number i.e. `yarn add @common-fate/design@0.1.0`
 2. Install peer dependencies
