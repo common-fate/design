@@ -49,6 +49,25 @@ declare const colors: {
         300: string;
     };
     neutrals: {
+        0: string;
+        100: string;
+        200: string;
+        300: string;
+        400: string;
+        500: string;
+        600: string;
+        700: string;
+        800: string;
+    };
+    actionSuccess: {
+        100: string;
+        200: string;
+    };
+    actionInfo: {
+        100: string;
+        200: string;
+    };
+    actionDanger: {
         100: string;
         200: string;
     };

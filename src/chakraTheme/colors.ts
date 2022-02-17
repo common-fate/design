@@ -53,12 +53,31 @@ export const colors = {
     400: "#0060FA",
   },
   brandPink: {
-    100: "#f3a5d5",
+    100: "#94bdff",
     200: "#ed77c0",
     300: "#e74bac",
   },
   neutrals: {
-    100: "#FFFFFF",
-    200: "#E5E5E5",
+    0: "#FFFFFF", // white
+    100: "#F9F8F9", // grey1
+    200: "#F4F4F4", // grey2
+    300: "#E5E5E5", // grey3
+    400: "#B6B6B6", // grey4
+    500: "#8B8C8C", // grey5
+    600: "#757575", // grey6
+    700: "#2D2F30", // grey7
+    800: "#151617", // grey8
+  },
+  actionSuccess: {
+    100: "#E2FBD7",
+    200: "#34B53A",
+  },
+  actionInfo: {
+    100: "#CCF8FE",
+    200: "#02A0FC",
+  },
+  actionDanger: {
+    100: "#FFE5D3",
+    200: "#FF3A29",
   },
 };
